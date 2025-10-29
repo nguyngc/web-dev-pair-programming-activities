@@ -1,0 +1,43 @@
+.App {
+  padding: 10px;
+}
+.card-item {
+  border-radius: 10px;
+  width: 350px;
+  height: 200px;
+  margin-right: 20px;
+  padding: 10px;
+  display: inline-block;
+
+  img {
+    width: 50px;
+    float: right;
+  }
+
+  p {
+    line-height: 50%;
+    padding-left: 10px;
+
+    span {
+      padding-right: 50px;
+    }
+  }
+
+  .card-number {
+    text-align: center;
+    font-size: 30px;
+
+    span {
+      padding: 0px 5px 0px 15px;
+      line-height: 2;
+      font-size: 70px;
+    }
+  }
+}
+
+.greeting-item {
+  border: solid 1px black;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
