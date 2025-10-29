@@ -1,0 +1,21 @@
+.App {
+  padding: 10px;
+}
+
+.card-item {
+  border: solid 1px #000000;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: left;
+
+  .card-item-img {
+    float: left;
+    padding-right: 10px;
+    min-width: 128px;
+    min-height: 128px;
+  }
+
+  ul.card-item-content {
+    list-style-type: none;
+  }
+}
