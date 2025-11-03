@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "202ddf5b-de5e-4e8c-ada9-08cab55724a0",
+		"name": "Tours API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3221093"
+	},
+	"item": [
+		{
+			"name": "Get All Tours",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Tour",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Best of Paris in 7 Days Tour\",\n    \"info\": \"Paris is synonymous with the finest things that culture can offer...\",\n    \"image\": \"https://www.course-api.com/images/tours/tour-1.jpeg\",\n    \"price\": \"1,995\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tour by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Tour by ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Updated Tour Name\",\n    \"info\": \"Updated tour information...\",\n    \"image\": \"https://www.course-api.com/images/tours/tour-2.jpeg\",\n    \"price\": \"2,095\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tour by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4000/tours/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"tours",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
